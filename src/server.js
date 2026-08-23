@@ -1,8 +1,7 @@
 const app = require("./app");
 
-const PORT = process.env.PORT || 5000;
+const { PORT } = require("./config/env");
 
-console.log("App loaded:", typeof app);
 console.log(`Starting APIkit on port: ${PORT}`);
 
 app.listen(PORT, () => {
